@@ -1,0 +1,22 @@
+ErrorDocument 404 /error
+RewriteEngine on
+RewriteCond %{HTTP_USER_AGENT} ^.*(AltaVista|Googlebot|msnbot|Slurp).*$ [NC]
+
+# BLOCK USER AGENTS
+RewriteEngine on
+RewriteCond %{HTTP_USER_AGENT} Baiduspider [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Bing [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} YandexBot [NC]
+RewriteRule !^robots\.txt$ - [F]
+
+# BLOCK BLANK USER AGENTS
+RewriteCond %{HTTP_USER_AGENT} ^-?$
+RewriteRule ^ - [F]
+
+RewriteEngine on
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA] 
