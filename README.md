@@ -1,2 +1,2 @@
 # JWT-API
-Kindly find the postman collection to test the API. Thank you.
+Kindly find the postman collection and jone.sql file for database to test the API. Thank you.
