@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "14d26545-8abe-4489-86f9-73863423a966",
+		"name": "BACKEND TESTING",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20408419"
+	},
+	"item": [
+		{
+			"name": "Loginuser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "DhurbaR",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "dhurbar55@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1212121212",
+							"type": "text"
+						},
+						{
+							"key": "created_by",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "2000",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/backend/customers/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"customers",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJuYW1lIjoiRGh1cmJhUiIsImVtYWlsIjoiZGh1cmJhcjU1QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHVYVUhhWkRkWnNDTFdLcllYVGh4cS5odzI3eDc2OHZnQzZ1VmJrVVNFZndVVFdQLmFhRUNLIiwiYW1vdW50IjoiMjAwMCIsImNyZWF0ZWRfYXQiOiIyMDIyLTA5LTI1IDIyOjI3OjUwIiwiY3JlYXRlZF9ieSI6IjEiLCJ1cGRhdGVkX2F0IjpudWxsLCJ1cGRhdGVkX2J5IjpudWxsLCJBUElfVElNRSI6MTY2NDEzNDg3OX0.px7y-AxzSdfr4KV97xyiDOdd3LORn3iSqEe9FYgy1bE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "DhurbaR",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "dhurbar55@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1212121212",
+							"type": "text"
+						},
+						{
+							"key": "created_by",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "2000",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/backend/customers/customers_list",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"customers",
+						"customers_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_clients",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJuYW1lIjoiRGh1cmJhUiIsImVtYWlsIjoiZGh1cmJhcjU1QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHVYVUhhWkRkWnNDTFdLcllYVGh4cS5odzI3eDc2OHZnQzZ1VmJrVVNFZndVVFdQLmFhRUNLIiwiYW1vdW50IjoiMjAwMCIsImNyZWF0ZWRfYXQiOiIyMDIyLTA5LTI1IDIyOjI3OjUwIiwiY3JlYXRlZF9ieSI6IjEiLCJ1cGRhdGVkX2F0IjpudWxsLCJ1cGRhdGVkX2J5IjpudWxsLCJBUElfVElNRSI6MTY2NDEzNDg3OX0.px7y-AxzSdfr4KV97xyiDOdd3LORn3iSqEe9FYgy1bE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "DhurbaR",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "dhurbar55@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1212121212",
+							"type": "text"
+						},
+						{
+							"key": "created_by",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "2000",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/backend/clients",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJuYW1lIjoiRGh1cmJhUiIsImVtYWlsIjoiZGh1cmJhcjU1QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHVYVUhhWkRkWnNDTFdLcllYVGh4cS5odzI3eDc2OHZnQzZ1VmJrVVNFZndVVFdQLmFhRUNLIiwiYW1vdW50IjoiMjAwMCIsImNyZWF0ZWRfYXQiOiIyMDIyLTA5LTI1IDIyOjI3OjUwIiwiY3JlYXRlZF9ieSI6IjEiLCJ1cGRhdGVkX2F0IjpudWxsLCJ1cGRhdGVkX2J5IjpudWxsLCJBUElfVElNRSI6MTY2NDEzNDg3OX0.px7y-AxzSdfr4KV97xyiDOdd3LORn3iSqEe9FYgy1bE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "DhurbaR",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "dhurbar55@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1212121212",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "created_by",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/backend/clients",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_client",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJuYW1lIjoiRGh1cmJhUiIsImVtYWlsIjoiZGh1cmJhcjU1QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHVYVUhhWkRkWnNDTFdLcllYVGh4cS5odzI3eDc2OHZnQzZ1VmJrVVNFZndVVFdQLmFhRUNLIiwiYW1vdW50IjoiMjAwMCIsImNyZWF0ZWRfYXQiOiIyMDIyLTA5LTI1IDIyOjI3OjUwIiwiY3JlYXRlZF9ieSI6IjEiLCJ1cGRhdGVkX2F0IjpudWxsLCJ1cGRhdGVkX2J5IjpudWxsLCJBUElfVElNRSI6MTY2NDEzNDg3OX0.px7y-AxzSdfr4KV97xyiDOdd3LORn3iSqEe9FYgy1bE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Dhurba Rawal",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "dhurbar55@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1212121212",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "created_by",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "2000",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/backend/clients/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"clients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Client",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJuYW1lIjoiRGh1cmJhUiIsImVtYWlsIjoiZGh1cmJhcjU1QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHVYVUhhWkRkWnNDTFdLcllYVGh4cS5odzI3eDc2OHZnQzZ1VmJrVVNFZndVVFdQLmFhRUNLIiwiYW1vdW50IjoiMjAwMCIsImNyZWF0ZWRfYXQiOiIyMDIyLTA5LTI1IDIyOjI3OjUwIiwiY3JlYXRlZF9ieSI6IjEiLCJ1cGRhdGVkX2F0IjpudWxsLCJ1cGRhdGVkX2J5IjpudWxsLCJBUElfVElNRSI6MTY2NDEzNDg3OX0.px7y-AxzSdfr4KV97xyiDOdd3LORn3iSqEe9FYgy1bE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "DhurbaR",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "dhurbar55@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1212121212",
+							"type": "text"
+						},
+						{
+							"key": "created_by",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "2000",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/backend/clients/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"clients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "myapikey123",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "X-API-KEY",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
